@@ -2,6 +2,17 @@
 
 function makeInterface()
 {
+    let titleAndLink = ce('a');
+    titleAndLink.href = 'https://github.com/ChristopherAndrewTopalian/CATopalian_JS_Text_to_Speech';
+    titleAndLink.target = '_blank';
+    titleAndLink.style.fontFamily = 'Arial';
+    titleAndLink.style.fontWeight = 'bold';
+    titleAndLink.textContent = 'CATopalian JS Text to Speech';
+    titleAndLink.style.fontSize = '17px';
+    titleAndLink.style.textDecoration = 'none';
+    titleAndLink.style.color = 'rgb(170, 170, 170)';
+    ba(titleAndLink);
+
     let theText = ce('textarea');
     theText.id = 'theText';
     theText.placeholder = 'Enter Text Here';
